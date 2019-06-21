@@ -1,4 +1,9 @@
+
+
 "use strict"
+var delay = 1500
+
+setTimeout(function(){
 
 	
 function guessIt (secretNum, yourGuess) {
@@ -6,6 +11,7 @@ function guessIt (secretNum, yourGuess) {
 var secret = Math.random () * 10;
 var secretNum = Math.floor (secret) + 1;
 var counter = 0;
+
 
 
 while (counter < 3) {
@@ -25,15 +31,21 @@ while (counter < 3) {
 		alert ("Game Over! Refresh Page to try again.")	
  		}
 
+   	if (secretNum === yourGuess) 
+		{alert("Good Guess! You are right!");
+		}
+
 
  }
 
- 	if (secretNum === yourGuess) 
-		{alert("Good Guess! You are right!");
-		}
+ 	
 
 }
 
  	
 
 guessIt ()
+
+}, delay) ;
+
+
