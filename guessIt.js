@@ -1,7 +1,7 @@
 
 
 "use strict"
-var delay = 1500
+var delay = 1100
 
 setTimeout(function(){
 
@@ -31,14 +31,14 @@ while (counter < 3) {
 		alert ("Game Over! Refresh Page to try again.")	
  		}
 
-   	if (secretNum === yourGuess) 
-		{alert("Good Guess! You are right!");
-		}
+   	
 
 
  }
 
- 	
+ if (secretNum === yourGuess) 
+		{alert("Good Guess! You are right!");
+		}	
 
 }
 
