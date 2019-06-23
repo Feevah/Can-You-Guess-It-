@@ -31,14 +31,14 @@ while (counter < 3) {
 		alert ("Game Over! Refresh Page to try again.")	
  		}
 
-   	
+   	if (secretNum === yourGuess) 
+		{alert("Good Guess! You are right!");
+		}
 
 
  }
 
- if (secretNum === yourGuess) 
-		{alert("Good Guess! You are right!");
-		}	
+ 	
 
 }
 
